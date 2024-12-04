@@ -36,26 +36,6 @@ example = calculates_array(example_array)
 print(example)
 
 # 6-  לחזור!!
-# def del_function(students,objects):
-#     for student in students:
-#         if objects in student:
-#             del student[objects]
-#
-#
-#
-# students = [
-#     { "id":25023221, "first name":"adi", "last name": "lasri", "age": 25, "country":"israel", "city":"jerusalem" },
-#     { "id":31270051, "first name":"deke", "last name": "tal", "age": 30, "country":"israel", "city":"bat yam"},
-#     { "id":30209679, "first name":"Yair", "last name": "paz", "age": 28, "country":"israel", "city":"dimona"},
-#     { "id":36578901, "first name":"avi", "last name": "zagםri", "age": 40, "country":"israel", "city":"tel aviv"}
-# ]
-#
-# del_function(students,"")
-# print(del_function,"לאחר הסרת המאפיין 'עיר':")
-
-
-
-
 
 
 
