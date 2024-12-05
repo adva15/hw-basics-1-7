@@ -35,9 +35,41 @@ example_array = [1, 13, 22, 123, 49, 34, 5, 24, 57, 45]
 example = calculates_array(example_array)
 print(example)
 
-# 6-  לחזור!!
+# 6
+students = [
+    {"id": 25023221, "first name": "adi", "last name": "lasri", "age": 25, "country": "israel", "city": "jerusalem"},
+    {"id": 31270051, "first name": "dekel", "last name": "tal", "age": 30, "country": "israel", "city": "bat yam"},
+    {"id": 30209679, "first name": "Yair", "last name": "paz", "age": 28, "country": "israel", "city": "dimona"},
+    {"id": 36578901, "first name": "avi", "last name": "zaguri", "age":40, "country": "israel", "city": "tel aviv"}
+]
+print("prints property:")
+def print_students(students):
+    for student in students:
+        print(f"ID: {student.get('id')}"), print(f"First Name: {student.get('first name')}"), print(f"Last Name: {student.get('last name')}")
+        print(f"Age: {student.get('age')}"), print(f"Country: {student.get('country')}"), print(f"City: {student.get('city')}"), print("  ")
+print_students(students)
 
+def sort_students_age(students):
+    return sorted(students, key=lambda student: student['age'], reverse=True)
 
+sorted_students = sort_students_age(students)
+print("Sorted students by age (oldest to the youngest):")
+print_students(sorted_students)
+
+def remove_property(students, property_to_remove):
+    for student in students:
+        if property_to_remove in student:
+            del student[property_to_remove]
+    return students
+
+students = remove_property(students, "first name")
+students = remove_property(students, "last name")
+students = remove_property(students, "id")
+students = remove_property(students, "age")
+students = remove_property(students, "country")
+students = remove_property(students, "city")
+
+print("after remove:",students)
 
 
 #7
